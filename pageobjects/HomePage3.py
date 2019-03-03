@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from Discuz.pageobjects.BasePage import BasePage
 import time
 from Discuz.framework.logger import Logger
-logger=Logger(logger="BasePage").getlog()
+logger=Logger(logger="testDiscuz3").getlog()
 class testDiscuz3(BasePage):
     Find = (By.NAME, "srchtxt")        #搜索文本框
     searchsubmit=(By.NAME,"searchsubmit")     #搜索提交按钮

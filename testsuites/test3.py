@@ -13,7 +13,7 @@ class DiscuzTest3(BaseTestcase):
         title=login5.Select("haotest")
         try:
             self.assertEqual(title,"haotest",msg=title)
-            logger.info("断言成功%s"%title)
+            logger.info("断言成功，搜索到haotest%s"%title)
         except:
             logger.error("断言错误")
 

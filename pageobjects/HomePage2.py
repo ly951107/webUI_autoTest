@@ -2,15 +2,15 @@ from selenium.webdriver.common.by import By
 from Discuz.pageobjects.BasePage import BasePage
 from selenium.webdriver.common.keys import Keys
 import time
-from Discuz.framework.logger import Logger
-logger=Logger(logger="testDiscuz2").getlog()
+# from Discuz.framework.logger import Logger
+# logger=Logger(logger="testDiscuz2").getlog()
 class testDiscuz2(BasePage):
     name_input = (By.NAME, "username")  # 用户姓名输入
     pwd_input = (By.NAME, "password")  # 用户密码输入
     login_btn = (By.CSS_SELECTOR, ".fastlg_l em")  # 登录按钮
-    MoKuai = (By.CSS_SELECTOR, (".bm_c h2 a"))
+    MoKuai = (By.CSS_SELECTOR, (".bm_c tr:nth-last-child(3) h2 a"))
     choose = (By.CSS_SELECTOR, ("tbody:nth-last-child(2) tr td:nth-child(2)"))  # 选中删除的对象
-    delete = (By.LINK_TEXT, "删除")  # 删除按钮
+    delete = (By.LINK_TEXT, "删除")# 删除按钮
     QueRen = (By.NAME, "modsubmit")
     Center = (By.LINK_TEXT, "管理中心")  # 管理中心
     Center_pwd = (By.NAME, "admin_password")  # 管理中心密码

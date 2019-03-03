@@ -1,10 +1,12 @@
 import unittest
 import os
 import HTMLTestRunner
-from Discuz.testsuites.test1 import DiscuzTest1
-from Discuz.testsuites.test2 import DiscuzTest2
-from Discuz.testsuites.test3 import DiscuzTest3
-from Discuz.testsuites.test4 import DiscuzTest4
+# import sys
+# sys.path.append("F:\lyUI\Discuz")
+# from Discuz.testsuites.test1 import DiscuzTest1
+# from Discuz.testsuites.test2 import DiscuzTest2
+# from Discuz.testsuites.test3 import DiscuzTest3
+# from Discuz.testsuites.test4 import DiscuzTest4
 
 
 # 设置报告文件的保存路径

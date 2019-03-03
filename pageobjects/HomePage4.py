@@ -29,18 +29,17 @@ class testDiscuz4(BasePage):
         time.sleep(3)
         self.click(*self.voteBtn)
     def voteTieZi(self):
-        pass
         self.click(*self.option_1)
         self.click(*self.sumbit)
-        self.switch_to_iframe()
-        theme=self.HuoQuText(*self.theme)
-        Name1=self.HuoQuText(*self.Name1)
-        Name2 = self.HuoQuText(*self.Name2)
-        compare1=self.HuoQuText(*self.compare1)
-        compare2 = self.HuoQuText(*self.compare2)
-        logger.info("主题是：%s"%theme)
-        logger.info("选项1名称：%s,选项1投票比例：%s"%(Name1,compare1))
-        logger.info("选项2名称：%s,选项2投票比例：%s" %(Name2,compare2))
+        # self.switch_to_iframe()
+        # theme=self.HuoQuText(*self.theme)
+        # Name1=self.HuoQuText(*self.Name1)
+        # Name2 = self.HuoQuText(*self.Name2)
+        # compare1=self.HuoQuText(*self.compare1)
+        # compare2 = self.HuoQuText(*self.compare2)
+        # logger.info("主题是：%s"%theme)
+        # logger.info("选项1名称：%s,选项1投票比例：%s"%(Name1,compare1))
+        # logger.info("选项2名称：%s,选项2投票比例：%s" %(Name2,compare2))
 
 
 

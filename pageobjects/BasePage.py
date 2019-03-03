@@ -1,4 +1,6 @@
 from selenium.webdriver.support.wait import WebDriverWait
+import os
+import time
 from selenium.webdriver.support import expected_conditions as EC
 from Discuz.framework.logger import Logger
 logger=Logger(logger="BasePage").getlog()
@@ -53,4 +55,14 @@ class BasePage(object):
     def HuoQuText(self,*loc):
         el=self.driver.find_element(*loc)
         return el.text
+    def get_windows_img(self):
+        file_path=os.path.dirname(os.path.abspath("."))+"/screenshots/"
+        rq=time.strftime("%Y%m%d%H%M",time.localtime(time.time()))
+        screen_name=file_path+rq+".png"
+        try:
+            self.driver.get_screenshot_as_file(screen_name)
+            logger.info("有屏幕截图bingq保存的路径是/screenshots/")
+        except Exception as e:
+            self.get_windows_img()
+            logger.error("%s截屏失败"%e)
 
